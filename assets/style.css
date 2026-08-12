@@ -1,8 +1,10 @@
-html, body, .stMarkdown, p, h1, h2, h3, h4, h5, h6, label, div, a, button, select, input {
+h1, h2, h3, h4, h5, h6, p, label, a, td, th, li, select, input, option,
+.kpi-value, .kpi-title, .kpi-delta, .profile-table-label, .profile-table-val-right,
+.profile-note-box, .justification-text, .future-opportunity-title, .future-opportunity-desc {
     font-family: 'Russo One', sans-serif !important;
 }
 
-span:not(.notranslate):not([data-testid="stIcon"]) {
+div.stButton > button {
     font-family: 'Russo One', sans-serif !important;
 }
 

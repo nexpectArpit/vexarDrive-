@@ -188,7 +188,7 @@ layout_theme = dict(
         gridcolor='#f3f4f6',
         zerolinecolor='#cbd5e1',
         tickfont=dict(color='#4b5563'),
-        titlefont=dict(color='#111111'),
+        title_font=dict(color='#111111'),
         fixedrange=True
     ),
     yaxis=dict(
@@ -198,7 +198,7 @@ layout_theme = dict(
         gridcolor='#f3f4f6',
         zerolinecolor='#cbd5e1',
         tickfont=dict(color='#4b5563'),
-        titlefont=dict(color='#111111'),
+        title_font=dict(color='#111111'),
         fixedrange=True
     )
 )
