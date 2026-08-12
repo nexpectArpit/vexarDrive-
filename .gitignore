@@ -14,7 +14,7 @@ ehthumbs.db
 Thumbs.db
 
 # Generated data cache files
-processed_data.pkl
+# (removed processed_data.pkl to track precalculated states in git)
 
 # Environments
 .env

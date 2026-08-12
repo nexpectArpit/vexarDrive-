@@ -40,7 +40,7 @@ try:
     trips = data['trips']
     telemetry = data['telemetry']
 except FileNotFoundError:
-    st.error("Preprocessed data file not found! Please run 'python3 preprocess.py' first.")
+    st.error("Preprocessed data file not found! Please run 'python3 -m src.data.preprocessor' first.")
     st.stop()
 
 page = render_sidebar_logo()
