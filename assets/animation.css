@@ -1,0 +1,102 @@
+.chase-bike {
+    position: absolute;
+    font-size: 26px;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    pointer-events: none;
+    z-index: 999999 !important;
+    transform-origin: center center;
+    display: none;
+}
+
+.tire-track, .bike-tire-track {
+    position: absolute;
+    width: 8px;
+    height: 6px;
+    background-color: #FFDD00 !important;
+    border-left: 2px solid #111111 !important;
+    border-right: 2px solid #111111 !important;
+    opacity: 0.6;
+    pointer-events: none;
+    z-index: 999999 !important;
+    transform: translate(-50%, -50%) rotate(15deg);
+    animation: fadeTrack 0.8s ease-out forwards;
+}
+
+.bike-tire-track {
+    position: fixed !important;
+    z-index: 999998 !important;
+}
+
+@keyframes fadeTrack {
+    0% {
+        opacity: 0.8;
+        transform: translate(-50%, -50%) scale(1) rotate(15deg);
+    }
+    100% {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0.3) rotate(15deg);
+    }
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: help;
+    margin-left: 8px;
+    font-size: 0.95rem;
+    color: #94a3b8;
+    vertical-align: middle;
+    font-weight: normal;
+    transition: color 0.15s ease;
+}
+
+.tooltip:hover {
+    color: #FFDD00;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 290px;
+    background-color: #111111 !important;
+    color: #ffffff !important;
+    text-align: left;
+    border-radius: 8px;
+    padding: 12px 16px;
+    position: absolute;
+    z-index: 9999999 !important;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -145px;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
+    font-family: 'Plus Jakarta Sans', sans-serif !important;
+    font-size: 0.85rem;
+    line-height: 1.4;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    white-space: normal;
+}
+
+.tooltip .tooltiptext, 
+.tooltip .tooltiptext b, 
+.tooltip .tooltiptext span {
+    color: #ffffff !important;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #111111 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}

@@ -1,0 +1,460 @@
+html, body, [class*="css"], .stMarkdown, p, h1, h2, h3, h4, h5, h6, span, label, div, a, button, select, input {
+    font-family: 'Russo One', sans-serif !important;
+}
+
+h1, h2, h3, h4, h5, h6, p, label, li, span, th, td, strong, em, dt, dd {
+    color: #111111 !important;
+}
+
+.stApp {
+    background-color: #ffffff !important;
+    color: #111111 !important;
+}
+
+.stApp::before {
+    content: "";
+    position: fixed;
+    top: 15%;
+    right: 3%;
+    width: 140px;
+    height: 240px;
+    background-image: radial-gradient(#FFDD00 2px, transparent 2px);
+    background-size: 16px 16px;
+    opacity: 0.8;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.stApp::after {
+    content: "";
+    position: fixed;
+    bottom: 8%;
+    left: 20%;
+    width: 120px;
+    height: 180px;
+    background-image: radial-gradient(#FFDD00 2px, transparent 2px);
+    background-size: 16px 16px;
+    opacity: 0.5;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.main-container-bg {
+    position: fixed;
+    left: 15%;
+    top: 15%;
+    width: 400px;
+    height: 800px;
+    background-color: #FFFDE8;
+    border-radius: 200px;
+    filter: blur(10px);
+    z-index: 0;
+    pointer-events: none;
+    opacity: 0.75;
+}
+
+[data-testid="stSidebar"] {
+    background-color: #ffffff !important;
+    border-right: 1px solid #e2e8f0 !important;
+    border-top: 5px solid #FFDD00 !important;
+    z-index: 100 !important;
+}
+
+[data-testid="stSidebar"] p, 
+[data-testid="stSidebar"] span, 
+[data-testid="stSidebar"] label, 
+[data-testid="stSidebar"] h2,
+[data-testid="stSidebar"] h3 {
+    color: #111111 !important;
+}
+
+.main-title {
+    font-weight: 800;
+    font-size: 2.5rem;
+    color: #111111 !important;
+    letter-spacing: -0.03em;
+    margin-bottom: 2px;
+}
+
+.subtitle {
+    font-size: 1.05rem;
+    color: #4b5563 !important;
+    margin-bottom: 25px;
+    font-weight: 400;
+}
+
+.section-header {
+    font-weight: 800;
+    font-size: 1.5rem;
+    color: #111111 !important;
+    margin-top: 45px;
+    margin-bottom: 25px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.section-header::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 60px;
+    height: 4px;
+    background-color: #FFDD00;
+    border-radius: 2px;
+}
+
+.business-card {
+    background-color: #ffffff !important;
+    border: 1px solid #e5e7eb !important;
+    border-radius: 16px !important;
+    padding: 24px !important;
+    box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.03) !important;
+    margin-bottom: 20px;
+    color: #111111 !important;
+    position: relative;
+    z-index: 1;
+}
+
+.business-card h4, .business-card p, .business-card td, .business-card tr {
+    color: #111111 !important;
+}
+
+.metric-grid {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 1;
+}
+
+.kpi-card {
+    flex: 1;
+    min-width: 220px;
+    background-color: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+    padding: 20px 24px;
+    box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.03);
+    transition: all 0.2s ease;
+}
+
+.kpi-card:hover {
+    border-color: #FFDD00;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 24px -2px rgba(255, 221, 0, 0.15);
+}
+
+.kpi-title {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #4b5563 !important;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.kpi-value {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: #111111 !important;
+    line-height: 1.1;
+}
+
+.custom-alert {
+    padding: 16px 20px;
+    border-radius: 12px;
+    margin-bottom: 16px;
+    border: 1px solid #e5e7eb;
+    background-color: #ffffff;
+}
+
+.alert-urgent {
+    background-color: #fff1f2;
+    border-left: 4px solid #f43f5e;
+    color: #9f1239 !important;
+}
+
+.alert-monitor {
+    background-color: #fffbeb;
+    border-left: 4px solid #f59e0b;
+    color: #92400e !important;
+}
+
+div.stButton > button {
+    background-color: #111111 !important;
+    color: #ffffff !important;
+    border-radius: 50px !important;
+    padding: 8px 24px !important;
+    font-weight: 700 !important;
+    border: none !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1) !important;
+    transition: all 0.2s ease !important;
+}
+
+div.stButton > button:hover {
+    background-color: #FFDD00 !important;
+    color: #111111 !important;
+    transform: translateY(-1px) !important;
+    box-shadow: 0 4px 12px rgba(255, 221, 0, 0.3) !important;
+}
+
+div[data-baseweb="select"] > div, 
+div[data-baseweb="select"] span, 
+div[data-baseweb="select"] div {
+    background-color: #ffffff !important;
+    border-color: #e5e7eb !important;
+    border-radius: 8px !important;
+    color: #111111 !important;
+}
+
+div[data-baseweb="select"] > div:hover {
+    border-color: #FFDD00 !important;
+}
+
+ul[role="listbox"] li, 
+ul[role="listbox"] div {
+    color: #111111 !important;
+    background-color: #ffffff !important;
+}
+
+div[role="radiogroup"] label p {
+    color: #111111 !important;
+}
+
+div[data-testid="stNotification"] {
+    background-color: #ffffff !important;
+    border: 1px solid #e5e7eb !important;
+    border-radius: 12px !important;
+    box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.03) !important;
+}
+
+div[data-testid="stNotification"] div {
+    color: #111111 !important;
+}
+
+div[data-testid="stNotification"] p {
+    color: #111111 !important;
+}
+
+.stDataFrame, div[data-testid="stTable"] {
+    border: 1px solid #e5e7eb !important;
+    border-radius: 12px !important;
+    overflow: hidden;
+    background-color: #ffffff !important;
+}
+
+a {
+    color: #111111 !important;
+    text-decoration: underline !important;
+    text-decoration-color: #FFDD00 !important;
+    text-decoration-thickness: 2px !important;
+}
+
+a:hover {
+    color: #000000 !important;
+    background-color: #FFDD00 !important;
+}
+
+code {
+    background-color: #f3f4f6 !important;
+    color: #111111 !important;
+    padding: 2px 6px !important;
+    border-radius: 4px !important;
+    font-family: monospace !important;
+}
+
+pre {
+    background-color: #f3f4f6 !important;
+    border: 1px solid #e5e7eb !important;
+    border-radius: 6px !important;
+    padding: 12px !important;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+}
+
+th {
+    background-color: #f3f4f6 !important;
+    border-bottom: 2px solid #e5e7eb !important;
+    padding: 10px !important;
+    font-weight: 600 !important;
+    text-align: left !important;
+}
+
+td {
+    border-bottom: 1px solid #e5e7eb !important;
+    padding: 10px !important;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f8f9fa;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #94a3b8;
+}
+
+.element-container a.paragraph-anchor {
+    display: none !important;
+}
+[data-testid="stHeaderActionElements"] {
+    display: none !important;
+}
+
+.sidebar-header-box {
+    padding: 18px 12px;
+    background-color: #FFDD00;
+    border-radius: 50px;
+    margin-bottom: 25px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+.sidebar-title {
+    font-family: 'Russo One', sans-serif !important;
+    font-weight: normal !important;
+    font-size: 2.1rem !important;
+    color: #111111 !important;
+    margin: 0 !important;
+    letter-spacing: -0.01em !important;
+    text-transform: uppercase !important;
+    line-height: 1.0 !important;
+    white-space: nowrap !important;
+}
+.sidebar-subtitle {
+    font-family: 'Syncopate', sans-serif !important;
+    font-size: 0.58rem !important;
+    color: #111111 !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.1em !important;
+    display: block !important;
+    margin-top: 6px !important;
+    white-space: nowrap !important;
+}
+
+.kpi-delta.text-red { color: #f43f5e !important; }
+.kpi-delta.text-darkred { color: #e11d48 !important; }
+.kpi-delta.text-amber { color: #d97706 !important; }
+.kpi-delta.text-emerald { color: #10b981 !important; }
+
+.business-card.full-height {
+    height: 100% !important;
+}
+.business-card-title {
+    margin-top: 0;
+    color: #111111 !important;
+    font-weight: 700;
+    font-size: 1.15rem;
+}
+.profile-table {
+    width: 100%;
+    border-collapse: collapse;
+    color: #4b5563;
+    font-size: 0.92rem;
+}
+.profile-table tr {
+    border-bottom: 1px solid #e5e7eb !important;
+}
+.profile-table td {
+    padding: 10px 0 !important;
+    border: none !important;
+}
+.profile-table-label {
+    font-weight: 600;
+}
+.profile-table-val-right {
+    text-align: right;
+}
+.profile-table-val-right.bold-blue {
+    font-weight: 700;
+    color: #111111 !important;
+    background-color: #FFDD00;
+    padding: 2px 6px !important;
+    border-radius: 4px;
+}
+.profile-table-val-right.bold-red {
+    font-weight: 700;
+    color: #f43f5e !important;
+}
+.profile-table-label.bold-red {
+    font-weight: 600;
+    color: #f43f5e !important;
+}
+.profile-note-box {
+    margin-top: 20px;
+    padding: 14px;
+    background: #f9fafb;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    line-height: 1.45;
+    color: #4b5563;
+}
+
+.justification-text {
+    font-size: 0.85rem;
+    opacity: 0.85;
+}
+
+.business-card-margin-top {
+    margin-top: 20px !important;
+}
+.future-opportunity-title {
+    margin-top: 0;
+    color: #111111 !important;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+.future-opportunity-desc {
+    color: #4b5563;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 0;
+}
+
+.info-icon {
+    display: inline-block;
+    margin-left: 8px;
+    font-size: 0.95rem;
+    color: #94a3b8;
+    cursor: help;
+    vertical-align: middle;
+    font-weight: normal;
+    transition: color 0.15s ease;
+}
+.info-icon:hover {
+    color: #FFDD00;
+}
+
+.credit-badge {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #FFDD00 !important;
+    color: #111111 !important;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-family: 'Russo One', sans-serif !important;
+    font-size: 0.75rem;
+    z-index: 999999 !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    pointer-events: none;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
